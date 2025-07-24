@@ -397,7 +397,7 @@ nav {
     background-image: url(./assets/news-letter-bg.png);
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     padding: 10rem 0;
     display: flex;
@@ -450,3 +450,64 @@ nav {
 
 
 /* footer section style  */
+footer {
+    background-color: #fafbff;
+    padding: 2rem 8rem;
+}
+
+.footer-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer-logo-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.footer-logo-con p{
+font-size: 1.2rem;
+ font-family: "Inter", sans-serif;
+ color: #8987A1;
+}
+
+.footer-links li{
+    list-style: none;
+
+}
+.footer-links li a{
+    text-decoration: none;
+    color: #8987A1;
+   font-family: "Inter", sans-serif;
+   font-size: .87rem;
+
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+}
+.footer-con .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: -20%;
+}
+
+.footer-con .social-icon img {
+    width:2rem;
+    height:2rem;
+}
+#x{
+    width: 1rem;
+    height: 1rem;
+}
+
+.social-icon{
+    margin-top: 0%;
+}
