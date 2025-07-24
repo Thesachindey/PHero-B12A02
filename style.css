@@ -1,13 +1,17 @@
 /* font inter  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* noto serif */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.logo-img{
+.logo-img {
     width: 7rem;
     height: auto;
 }
@@ -24,18 +28,21 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;   
+    gap: 2rem;
 }
+
 .nav-links li {
     list-style: none;
 }
+
 .nav-links a {
     text-decoration: none;
     font-weight: 500;
     font-size: .85rem;
     color: #8987A1;
 }
-#home a{
+
+#home a {
     color: #000;
     font-weight: bold;
 }
@@ -48,15 +55,152 @@ nav {
     gap: .3rem;
 }
 
-.cart a{
+.cart a {
     color: black;
 }
-.cart img{
+
+.cart img {
     width: 1.3rem;
     height: auto;
     cursor: pointer;
 }
+
 .cart img:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+}
+
+
+/* HERO SECTION STYLE  */
+
+.hero-section {
+    padding: 3rem 8rem;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.hero-details-con {
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Serif", serif;
+    gap: 1rem;
+
+
+}
+
+.hero-details-con h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #000;
+
+}
+
+.hero-details-con h1 span {
+    color: #E95A08;
+}
+
+.hero-details-con p {
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    color: #8987A1;
+}
+
+.hero-img {
+    width: 50%;
+}
+
+/* plants section style  */
+
+#shop {
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.plants-section-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.plants-section-description h1 {
+    font-family: "Noto Serif", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.plants-section-description h1 span {
+    color: #E95A08;
+}
+
+.plants-section-description p {
+    font-family: "Inter", sans-serif;
+    padding: 0 10%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #8987A1;
+}
+
+/* plants card con  */
+
+.plants-card-con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.plants-card {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: .5rem;
+
+}
+.card-sec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.plants-card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.plants-card-title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.plants-card-price {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.add-to-cart-btn {
+    background-color: #E95A08;
+    color: white;
+    padding: .5rem 1.5rem;
+    border: none;
+
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
 }
