@@ -1,26 +1,62 @@
+/* font inter  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.logo-img{
+    width: 7rem;
+    height: auto;
+}
+
 nav {
-    padding: 2rem 3rem;
+    padding: 1rem 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Inter", sans-serif;
 }
 
 .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem;   
 }
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .85rem;
+    color: #8987A1;
+}
+#home a{
+    color: #000;
+    font-weight: bold;
+}
+
 
 .cart {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: .3rem;
+}
+
+.cart a{
+    color: black;
+}
+.cart img{
+    width: 1.3rem;
+    height: auto;
+    cursor: pointer;
+}
+.cart img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
