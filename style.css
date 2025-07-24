@@ -275,3 +275,174 @@ nav {
     flex-direction: column;
     gap: 1.2rem;
 }
+
+
+
+/* offer-section-style  */
+
+.offer-section {
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+/* -------------------------- */
+
+.offer-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px 0;
+}
+
+
+
+
+
+.card {
+   
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  color: white;
+  font-family: sans-serif;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: "Noto Serif", serif;
+}
+
+.bloom {
+    background-image:url('./assets/deal-bloom.png') ;
+   
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.ana {
+    background-image: url('./assets/deal-ana.png');
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.zabo {
+    background-image: url('./assets/deal-zabo.png');
+  grid-column: 2 / 3;
+  grid-row: 1 / 3; 
+}
+
+.card-sub-con{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card a {
+  font-size: .8rem;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/* for zabo  */
+
+.zabo h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+.zabo a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+/* for dark mode  */
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 1;
+}
+.card h2,
+.card a {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* mail section style  */
+.mail-section {
+    background-image: url(./assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E95A08;
+}
+.mail-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+}
+
+.mail-con .input {
+    display: flex;
+    gap: 0;
+    width: 110%;
+    
+}
+.input input {
+    padding: .9rem 1rem;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+.input input:focus {
+    outline: none;
+}
+.input button {
+    background-color: #E95A08;
+    color: white;
+    padding: .9rem 3.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+  
+}
+.mail-con h1{
+    font-family: "Noto Serif", serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
