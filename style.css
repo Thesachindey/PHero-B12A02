@@ -204,3 +204,67 @@ nav {
     transition: all 0.3s ease-in-out;
     width: 100%;
 }
+
+/* Trusted seller section style  */
+
+.t-seller-section {
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.t-seller-con1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.t-seller-img1{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top:-20%;
+    right: -20%;
+    z-index: 10;
+
+    animation: rotateBadge 8s linear infinite;
+}
+
+@keyframes rotateBadge {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.t-seller-img2{
+    width: 100%;
+    height: auto;
+}
+
+.t-seller-con2{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.t-seller-con2 h1 {
+    font-family: "Noto Serif", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+}
+.t-seller-con2 ul li {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    color: #8987A1;
+    margin-left: 1.2rem;
+}
