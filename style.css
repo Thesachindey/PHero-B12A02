@@ -240,7 +240,7 @@ nav {
   100% {
     transform: rotate(360deg);
   }
-  
+
 }
 
 
@@ -254,7 +254,7 @@ nav {
     flex-direction: column;
     align-items:flex-start;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
 .t-seller-con2 h1 {
@@ -265,7 +265,13 @@ nav {
 }
 .t-seller-con2 ul li {
     font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.11rem;
     color: #8987A1;
     margin-left: 1.2rem;
+}
+
+.t-seller-con2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
