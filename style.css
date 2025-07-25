@@ -594,11 +594,13 @@ footer {
 
     .card {
         width: 100%;
-      
+
     }
-.bloom h2{
-    font-size: .9rem;
-}
+
+    .bloom h2 {
+        font-size: .9rem;
+    }
+
     .zabo h2 {
         font-size: 1rem;
 
@@ -646,22 +648,34 @@ footer {
         gap: 10px;
     }
 
+    .plants-card-title,
+    .plants-card-price {
+
+        font-size: 1rem;
+
+    }
+
+
     .hero-section {
         flex-direction: column-reverse;
         padding: 0;
     }
-    .hero-details-con h1{
-         font-size: 2rem
+
+    .hero-details-con h1 {
+        font-size: 2rem
     }
-    .hero-details-con p{
-         font-size: 1rem;
+
+    .hero-details-con p {
+        font-size: 1rem;
     }
-    .hero-section img{
+
+    .hero-section img {
         width: 100%;
     }
 
-.nav-m-hide{
-    display: none;
-}
+    .nav-m-hide {
+        display: none;
+    }
+
 
 }
